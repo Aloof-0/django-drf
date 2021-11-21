@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{# 注释：根据设计的模版参数格式，提取参数渲染页面 #}
+<ul>
+    {% for book in book_list %}
+        <li>书本主键：{{ book.id }}。书名：{{ book.btitle }}。出版日期：{{ book.bpub_date }}</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
